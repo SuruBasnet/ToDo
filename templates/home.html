@@ -32,7 +32,7 @@
                 <td>{{i.title}}</td>
                 <td>{{i.description}}</td>
                 <td>{{i.status}}</td>
-                <td><button><a href="{% url 'edit' pk=i.id %}">edit</a></button> <button>delete</button></td>
+                <td><button><a href="{% url 'edit' pk=i.id %}">edit</a></button> <button><a href="{% url 'delete' pk=i.id%}">delete</a></button></td>
             </tr>
             {% endfor %}
         </tbody>
